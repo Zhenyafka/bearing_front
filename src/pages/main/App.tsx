@@ -2,23 +2,27 @@ import './App.css';
 import TableContainer from '@mui/material/TableContainer';
 import {Paper, Table, TableBody, TableCell, TableHead, TableRow} from "@mui/material";
 
-function createData(
-    name: string,
-    calories: number,
-    fat: number,
-    carbs: number,
-    protein: number,
+
+
+export function createData(
+    Name: string,
+    Brand: string,
+    Inner: number,
+    Outer: number,
+    Width: number,
+    Count: number,
+    Price: string,
 ) {
-    return { name, calories, fat, carbs, protein };
+    return { Name, Brand, Inner, Outer, Width, Count, Price};
 }
 
 export const rows = [
-    createData('Frozen yoghurt', 159, 6.0, 24, 4.0),
-    createData('Ice cream sandwich', 237, 9.0, 37, 4.3),
-    createData('Eclair', 262, 16.0, 24, 6.0),
-    createData('Cupcake', 305, 3.7, 67, 4.3),
-    createData('Gingerbread', 356, 16.0, 49, 3.9),
-];
+    createData('1726204-2S.T', 'FKL', 20, 47, 14, 1, '791.06'),
+    createData('1726205-2S.T', 'FKL', 25, 52, 15, 1, '695.60'),
+    createData('1726206-2RS1', 'FKL', 30, 62, 16,1, '835.46'),
+    createData('1726207-2RS1', 'FKL', 35, 72, 17,1, '1024.16'),
+    createData('1726208-2RS1', 'FKL', 40, 80, 18,1, '1141.82'),
+    createData('1726209-2RS1', 'FKL', 45, 85, 19,1, '1348.28')]
 
 export const App = ()=> {
   console.log("constructor()")
@@ -29,26 +33,30 @@ export const App = ()=> {
                 <Table sx={{ minWidth: 650 }} aria-label="simple table">
                     <TableHead>
                         <TableRow>
-                            <TableCell>Dessert (100g serving)</TableCell>
-                            <TableCell align="right">Calories</TableCell>
-                            <TableCell align="right">Fat&nbsp;(g)</TableCell>
-                            <TableCell align="right">Carbs&nbsp;(g)</TableCell>
-                            <TableCell align="right">Protein&nbsp;(g)</TableCell>
+                            <TableCell>Name</TableCell>
+                            <TableCell align="right">Brand</TableCell>
+                            <TableCell align="right">Inner</TableCell>
+                            <TableCell align="right">Outer</TableCell>
+                            <TableCell align="right">Width</TableCell>
+                            <TableCell align="right">Count</TableCell>
+                            <TableCell align="right">Price</TableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>
                         {rows.map((row) => (
                             <TableRow
-                                key={row.name}
+                                key={row.Name}
                                 sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                             >
                                 <TableCell component="th" scope="row">
-                                    {row.name}
+                                    {row.Name}
                                 </TableCell>
-                                <TableCell align="right">{row.calories}</TableCell>
-                                <TableCell align="right">{row.fat}</TableCell>
-                                <TableCell align="right">{row.carbs}</TableCell>
-                                <TableCell align="right">{row.protein}</TableCell>
+                                <TableCell align="right">{row.Brand}</TableCell>
+                                <TableCell align="right">{row.Inner}</TableCell>
+                                <TableCell align="right">{row.Outer}</TableCell>
+                                <TableCell align="right">{row.Width}</TableCell>
+                                <TableCell align="right">{row.Count}</TableCell>
+                                <TableCell align="right">{row.Price}</TableCell>
                             </TableRow>
                         ))}
                     </TableBody>
