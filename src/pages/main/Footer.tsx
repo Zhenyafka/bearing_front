@@ -2,16 +2,15 @@ import s from './Footer.css'
 
 export const Footer = () => {
     return (
-        <div className="block">
-            <div className="Footer-block1">
+        <div className="footerBlock">
+            <div className="footerBlock1">
                 <h1>Information</h1>
                 <p>Contacts</p>
                 <p>Email</p>
                 <p>Address</p>
-                <p>About Us</p>
             </div>
 
-            <div className="Footer-block1">
+            <div className="footerBlock1">
                 <h1>Branches</h1>
                     <p>
                         <a href="https://yandex.com/maps/org/liberti/135563346253/?ll=50.072633%2C53.096842&z=17">116km</a>
