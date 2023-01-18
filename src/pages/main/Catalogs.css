@@ -1,0 +1,38 @@
+.catalogBlock{
+    align-content: baseline;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    height: content-box;
+    width: 1800px;
+    background-color: burlywood;
+    z-index: 1;
+    position: absolute;
+}
+
+.catalogBlock1{
+    align-content: center;
+    display: inline-block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    height: content-box;
+    width: 600px;
+    background-color: bisque;
+}
+
+.catalogBlock2{
+    display: inline-block;
+    float: left;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    height: content-box;
+    width: 250px;
+    background-color: blueviolet;
+}
+
+.catalogButton{
+    display: block;
+    background-color: red;
+}
