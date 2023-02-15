@@ -1,38 +1,19 @@
-.logo {
-    width: 500px;
-    height: 600px;
-}
+
+
 .headerBlock{
-    align-content: baseline;
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    height: content-box;
-    width: 2025px;
-    background-color: darkblue;
-}
-.headerBlock1{
+    position: relative;
     display: inline-block;
     align-content: center;
     float: left;
-    margin: 0;
-    padding: 0;
     height: 50%;
-    width: 1600px;
+    width: 2025px;
 }
-.headerBlock2{
-    display: inline-block;
+.top-right {
     float: left;
-    text-align: left;
-    margin: 0;
-    padding: 0;
-    background-color: darkblue;
-    height: 50%;
-    width: 300px;
+    position: absolute;
+    top: 2px;
+    right: 6px;
+    color: white;
+    -webkit-text-stroke: 1px #000000;
 }
 
-h1,p{
-    text-decoration: white;
-    color: white;
-    font-family: PT Sans, sans-serif;
-}
