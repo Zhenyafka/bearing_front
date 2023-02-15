@@ -1,8 +1,7 @@
 import TableContainer from '@mui/material/TableContainer';
 import {Paper, Table, TableBody, TableCell, TableHead, TableRow} from "@mui/material";
 import {GridColDef} from '@mui/x-data-grid';
-import * as React from 'react';
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 
 export interface Data {
     Name: string;
@@ -13,8 +12,6 @@ export interface Data {
     Count: number;
     Price: string;
 }
-
-
 export function createData(
     Name: string,
     Brand: string,
@@ -24,6 +21,7 @@ export function createData(
     Count: number,
     Price: string,
 ): Data {
+
     return {Name, Brand, Inner, Outer, Width, Count, Price};
 }
 
@@ -56,48 +54,34 @@ export const rows = [
     createData('Q203PP.AH02-M', 'FKL', 16.256, 40, 18.29, 1, '791.06')
 ]
 
-
 export const TableBearing = () => {
-    const [showedBearingRows, setShowedBearingRows] = useState({...rows});
-    const sortByOuter = () => setShowedBearingRows(rows.sort((a, b) => a.Outer - b.Outer))
+    const [showedBearingRows, setShowedBearingRows] = useState<Array<Data>>(rows);
 
-    // const [showedBearingRows, setShowedBearingRows] = useState(rows);
-    // const sortByOuter = [...Outer];
-    // if (showedBearingRows !== rows) {
-    //     sortByOuter.sort((a, b)=> {
-    //        if (a[sortByOuter] < b[sortByOuter]) {
-    //            return -1;
-    //        }
-    //         if (a[sortByOuter] > b[sortByOuter]) {
-    //             return 1;
-    //         }
-    //         return 0;
-    //     });
-    // }
+    const sortByPriceUp = () => setShowedBearingRows(() => {
+        console.log("CLICK UP")
+        rows.sort((a, b) => a.Price - b.Price)
+        console.log(JSON.stringify(showedBearingRows))
+        return rows
+    })
+
+    const sortByPriceDown = () => setShowedBearingRows(() => {
+        console.log("CLICK down")
+        rows.sort((a, b) => b.Price - a.Price)
+        console.log(JSON.stringify(showedBearingRows))
+        return rows
+    })
+
     return (
         <div className="App">
-            {/*<DataGrid*/}
-            {/*    rows={rows}*/}
-            {/*    columns={columns}*/}
-            {/*    pageSize={5}*/}
-            {/*    rowsPerPageOptions={[5]}*/}
-            {/*    checkboxSelection*/}
-            {/*    autoPageSize/>*/}
-            {/*<div>Table:Bearings</div>*/}
-            {/*<button onClick={sortByOuter}>*/}
-            {/*    TIK-TAK*/}
-            {/*</button>*/}
+            <div>Table:Bearings</div>
+            <button onClick={sortByPriceUp}>
+                Up
+            </button>
+            <button onClick={sortByPriceDown}>
+                Down
+            </button>
             <TableContainer component={Paper}>
                 <Table sx={{minWidth: 650}} aria-label="simple table">
-                    {/*<thead >*/}
-                    {/*<tr>*/}
-                    {/*    <th>*/}
-                    {/*        <button onClick={() => setShowedBearingRows('Outer')}>*/}
-                    {/*            Outer*/}
-                    {/*        </button>*/}
-                    {/*    </th>*/}
-                    {/*</tr>*/}
-                    {/*</thead>*/}
                     <TableHead>
                         <TableRow>
                             <TableCell>Name</TableCell>
@@ -110,7 +94,7 @@ export const TableBearing = () => {
                         </TableRow>
                     </TableHead>
                     <TableBody>
-                        {rows.map((row) => (
+                        {showedBearingRows.map((row: Data) => (
                             <TableRow
                                 key={row.Name}
                                 sx={{'&:last-child td, &:last-child th': {border: 0}}}
