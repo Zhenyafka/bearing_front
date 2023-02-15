@@ -5,7 +5,7 @@
     padding: 0;
     height: content-box;
     width: 2025px;
-    background-color: darkslateblue;
+    background-color: #3B5970;
 }
 .footerBlock1{
     display: inline-block;
@@ -17,9 +17,10 @@
 }
 
 h1,h2,p,a{
-    text-decoration: gainsboro;
-    color: black;
-    font-family: PT Sans, sans-serif;
+    border-color: #00CDFB;
+    font-family: Inria Serif;
+    font-style: normal;
+    color: white;
 }
 .block{
     height: 25%;

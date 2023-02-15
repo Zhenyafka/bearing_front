@@ -22,9 +22,6 @@ export const Footer = () => {
                     <p><a href="https://yandex.com/maps/11131/samara-oblast/house/ulitsa_stepana_razina_159/YUgYcQVlS0wGQFtpfXxyd3VkYQ==/?ll=51.725290%2C53.036975&z=17">
                         Borskoe
                     </a></p>
-                    <p><a href="https://yandex.com/maps/51/samara/house/prospekt_yunykh_pionerov_125/YUkYdAJgTkMOQFtpfX5zd3pjZA==/?ll=50.250769%2C53.226601&z=17">
-                        Krasnodonskaya
-                    </a></p>
             </div>
         <div className={s.FooterBlock2}></div>
         </div>
