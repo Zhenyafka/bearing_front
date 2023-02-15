@@ -18,7 +18,7 @@
     padding: 0;
     height: content-box;
     width: 600px;
-    background-color: ghostwhite;
+    background-color: darkgray;
 }
 
 .catalogBlock2{
@@ -29,15 +29,19 @@
     padding: 0;
     height: content-box;
     width: 250px;
-    background-color: gainsboro;
+    background-color: darkgray;
 }
 
 .catalogButton{
     display: block;
-    background-color: darkblue;
-    text-decoration: gainsboro;
+    background-color: #125D9D;
+    border-radius: revert;
+    border-width: 4px;
+    border-color: #00CDFB;
+    font-size: 1.5em;
+    font-family: Inria Serif;
+    font-style: normal;
     color: white;
-    font-family: PT Sans, sans-serif;
-    height: 50px;
-    width: 150px;
+    height: 71px;
+    width: 355px;
 }

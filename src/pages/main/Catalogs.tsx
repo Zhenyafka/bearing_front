@@ -44,7 +44,7 @@ export const Catalogs = () => {
 
     return <div>
         <button className={'catalogButton'} onClick={event => {setOpen(!isOpen)}}>
-            CATALOG
+            Catalog
         </button>
         {!isOpen ? null :
             <div className="catalogBlock">
