@@ -1,26 +1,26 @@
-.Footer-block1{
-    align-content: center;
+.footerBlock{
+    align-content: baseline;
     display: inline-block;
     margin: 0;
     padding: 0;
-    background-color: aqua;
+    height: content-box;
+    width: 2025px;
+    background-color: #3B5970;
+}
+.footerBlock1{
+    display: inline-block;
+    float: left;
+    margin: 0;
+    padding: 0;
     height: 5%;
     width: 250px;
 }
-.Footer-block2{
-    display: block;
-    float: right;
-    text-align: left;
-    margin: 0;
-    padding: 0;
-    background-color: aquamarine;
-    height: 250px;
-    width: 250px;
-}
-h1,h2,p{
-    text-decoration: none;
-    color: black;
-    font-family: PT Sans, sans-serif;
+
+h1,h2,p,a{
+    border-color: #00CDFB;
+    font-family: Inria Serif;
+    font-style: normal;
+    color: white;
 }
 .block{
     height: 25%;

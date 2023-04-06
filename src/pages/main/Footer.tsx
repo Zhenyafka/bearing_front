@@ -2,16 +2,15 @@ import s from './Footer.css'
 
 export const Footer = () => {
     return (
-        <div className="block">
-            <div className="Footer-block1">
+        <div className="footerBlock">
+            <div className="footerBlock1">
                 <h1>Information</h1>
                 <p>Contacts</p>
                 <p>Email</p>
                 <p>Address</p>
-                <p>About Us</p>
             </div>
 
-            <div className="Footer-block1">
+            <div className="footerBlock1">
                 <h1>Branches</h1>
                     <p>
                         <a href="https://yandex.com/maps/org/liberti/135563346253/?ll=50.072633%2C53.096842&z=17">116km</a>
@@ -22,9 +21,6 @@ export const Footer = () => {
                         </a></p>
                     <p><a href="https://yandex.com/maps/11131/samara-oblast/house/ulitsa_stepana_razina_159/YUgYcQVlS0wGQFtpfXxyd3VkYQ==/?ll=51.725290%2C53.036975&z=17">
                         Borskoe
-                    </a></p>
-                    <p><a href="https://yandex.com/maps/51/samara/house/prospekt_yunykh_pionerov_125/YUkYdAJgTkMOQFtpfX5zd3pjZA==/?ll=50.250769%2C53.226601&z=17">
-                        Krasnodonskaya
                     </a></p>
             </div>
         <div className={s.FooterBlock2}></div>

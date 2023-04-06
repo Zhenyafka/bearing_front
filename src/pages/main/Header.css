@@ -1,23 +1,19 @@
-.logo {
-    width: 500px;
-    height: 600px;
-}
-.Header-Block{
-    align-content: center;
+
+
+.headerBlock{
+    position: relative;
     display: inline-block;
-    margin: 0;
-    padding: 0;
-    background-color: aqua;
+    align-content: center;
+    float: left;
     height: 50%;
-    width: 1600px;
+    width: 2025px;
 }
-.Header-Block1{
-    display: block;
-    float: right;
-    text-align: left;
-    margin: 0;
-    padding: 0;
-    background-color: aqua;
-    height: 50%;
-    width: 240px;
+.top-right {
+    float: left;
+    position: absolute;
+    top: 2px;
+    right: 6px;
+    color: white;
+    -webkit-text-stroke: 1px #000000;
 }
+
