@@ -18,15 +18,18 @@ export function App () {
         <Router>
             <Navbar/>
             <Routes>
-                <Route path='/Catalogs' exact component={Catalogs}/>
-                <Route path='/AboutUs' component={AboutUs}/>
-                <Route path='/Basket' component={Basket}/>
+                <Route path='/Catalogs' Component={Catalogs}/>
+                <Route path='/AboutUs' Component={AboutUs}/>
+                <Route path='/Basket' Component={Basket}/>
             </Routes>
         </Router>
     </div>
-    <div>
-        <Footer/>
-    </div>
+            {/*<div>*/}
+            {/*    <TableBearing/>*/}
+            {/*</div>*/}
+    {/*<div>*/}
+    {/*    <Footer/>*/}
+    {/*</div>*/}
 </div>
     )
 }

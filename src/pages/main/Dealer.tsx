@@ -1,6 +1,6 @@
 import certificate from "../../images/certificate.png";
 import certificate2 from "../../images/certificate2.jpg";
-import s from './Dealer.css'
+import s from './Components.css'
 export const Dealer = () =>{
     return <div className='dealerBlock'>
         <div className='dealerBlock1'>

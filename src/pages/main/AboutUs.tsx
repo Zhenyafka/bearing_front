@@ -1,5 +1,5 @@
 import {useState} from "react";
-import s from './AboutUs.css';
+import s from './Components.css';
 import certificate from "../../images/certificate.png";
 import certificate2 from "../../images/certificate2.jpg";
 
@@ -8,7 +8,7 @@ export const AboutUs= () => {
     const [isOpen, setOpen] = useState<boolean>(false)
     return (
         <div>
-        <button className={'aboutUsButton'} onClick={event => {setOpen(!isOpen)}}>
+        <button className={'button'} onClick={event => {setOpen(!isOpen)}}>
             AboutUs</button>
             {!isOpen ? null :
                 <div className='dealerBlock'>
@@ -25,7 +25,7 @@ export const AboutUs= () => {
                     <div className={s.dealerBlock}></div>
                 </div>
         }
-        <div className={s.aboutUsBlock}></div>
+        <div className={s.Button}></div>
         </div>
     )
 }

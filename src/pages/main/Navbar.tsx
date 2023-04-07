@@ -18,7 +18,7 @@ import { Link } from "react-router-dom";
 //     )
 // }
 
-const Navbar = () => {
+export const Navbar = () => {
     return (
         <div>
             <li>
@@ -34,5 +34,3 @@ const Navbar = () => {
         </div>
     );
 };
-
-export default Navbar;

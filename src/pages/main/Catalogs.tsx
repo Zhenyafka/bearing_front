@@ -1,5 +1,5 @@
 import {useState} from "react";
-import s from './Catalogs.css'
+import s from './Components.css'
 
 export interface MenuElement {
     name: string,
@@ -43,7 +43,7 @@ export const Catalogs = () => {
     }
 
     return <div>
-        <button className={'catalogButton'} onClick={event => {setOpen(!isOpen)}}>
+        <button className={'button'} onClick={event => {setOpen(!isOpen)}}>
             Catalog
         </button>
         {!isOpen ? null :
