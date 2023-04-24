@@ -109,10 +109,19 @@
     width: 2025px;
 }
 .headerBlock2 {
-    float: left;
     position: absolute;
-    top: 2px;
-    right: 6px;
-    color: white;
-    -webkit-text-stroke: 1px #000000;
+    width: 243px;
+    height: 57px;
+    left: 1750px;
+    top: 11px;
+
+    font-family: 'Inria Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: right;
+    color: #FFFCFC;
+    text-decoration-color: black;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
