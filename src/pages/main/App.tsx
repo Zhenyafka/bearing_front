@@ -1,6 +1,7 @@
 import * as React from 'react';
 import {Header} from "./Header.tsx";
 import {Catalogs} from "./Catalogs.tsx";
+import {Searchbar} from "./Searchbar.tsx";
 import {AboutUs} from "./AboutUs.tsx";
 import {Basket} from "./Basket.tsx";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
@@ -16,6 +17,9 @@ export function App () {
         </div>
             <div>
                 <Catalogs/>
+            </div>
+            <div>
+                <Searchbar/>
             </div>
             <div>
                 <AboutUs/>
