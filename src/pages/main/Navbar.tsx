@@ -3,34 +3,25 @@ import {AboutUs} from "./AboutUs.tsx";
 import {Basket} from "./Basket.tsx";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import s from './Components.css'
 
-
-// export const Navbar = () => {
-//     const [isOpen, setIsOpen] = useState<boolean>()
-//
-//
-//     return (
-//         <div>
-//             <Catalogs/>
-//             <AboutUs/>
-//             <Basket/>
-//         </div>
-//     )
-// }
 
 export const Navbar = () => {
     return (
         <div>
+        <div>
             <li>
-                <Link to="/Catalogs">Catalogs</Link>
+                <a href="/Catalogs" className="button">Catalogs</a>
             </li>
             <li>
-                <Link to="/AboutUs">AboutUs</Link>
+                <a href="/AboutUs" className="button">AboutUs</a>
             </li>
             <li>
-                <Link to="/Basket">Basket</Link>
+                <a href="/Basket" className="button">Basket</a>
             </li>
 
+        </div>
+            <div className={s.headerBlock}></div>
         </div>
     );
 };

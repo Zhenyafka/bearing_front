@@ -14,22 +14,31 @@ export function App () {
         <div>
             <Header/>
         </div>
-    <div>
-        <Router>
-            <Navbar/>
-            <Routes>
-                <Route path='/Catalogs' Component={Catalogs}/>
-                <Route path='/AboutUs' Component={AboutUs}/>
-                <Route path='/Basket' Component={Basket}/>
-            </Routes>
-        </Router>
-    </div>
+            <div>
+                <Catalogs/>
+            </div>
+            <div>
+                <AboutUs/>
+            </div>
+            <div>
+                <Basket/>
+            </div>
+    {/*<div>*/}
+    {/*    /!*<Router>*!/*/}
+    {/*        <Navbar/>*/}
+    {/*    /!*    <Routes>*!/*/}
+    {/*    /!*        <Route path='/Catalogs' Component={Catalogs}/>*!/*/}
+    {/*    /!*        <Route path='/AboutUs' Component={AboutUs}/>*!/*/}
+    {/*    /!*        <Route path='/Basket' Component={Basket}/>*!/*/}
+    {/*    /!*    </Routes>*!/*/}
+    {/*    /!*</Router>*!/*/}
+    {/*</div>*/}
             {/*<div>*/}
             {/*    <TableBearing/>*/}
             {/*</div>*/}
-    {/*<div>*/}
-    {/*    <Footer/>*/}
-    {/*</div>*/}
+    <div>
+        <Footer/>
+    </div>
 </div>
     )
 }
