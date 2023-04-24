@@ -1,0 +1,127 @@
+.button{
+    display: block;
+    background-color: #125D9D;
+    border-radius: revert;
+    border-width: 4px;
+    border-color: #00CDFB;
+    font-size: 1.5em;
+    font-family: Inria Serif;
+    font-style: normal;
+    color: white;
+    height: 71px;
+    width: 355px;
+}
+
+.buttonBackgroundBlock{
+    background-color: white;
+}
+.dealerBlock{
+    align-content: baseline;
+    display: inline-block;
+    float: left;
+    height: 590;
+    width: 2025px;
+    background-color: darkgray;
+}
+
+.dealerBlock1{
+    display: inline-block;
+    align-content: baseline;
+    float: right;
+    height: 218%;
+    width: 300px;
+
+}
+
+.catalogBlock{
+    align-content: baseline;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    height: content-box;
+    width: 2200px;
+    background-color: ghostwhite;
+    z-index: 1;
+    position: absolute;
+}
+
+.catalogBlock1{
+    align-content: center;
+    display: inline-block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    height: content-box;
+    width: 600px;
+    background-color: darkgray;
+}
+
+.catalogBlock2{
+    display: inline-block;
+    float: left;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    height: content-box;
+    width: 250px;
+    background-color: darkgray;
+}
+
+.table-bearing {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+}
+.table-bearing-cell {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.footerBlock{
+    align-content: baseline;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    height: content-box;
+    width: 2025px;
+    background-color: #3B5970;
+}
+.footerBlock1{
+    display: inline-block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    height: 5%;
+    width: 250px;
+    border-color: #00CDFB;
+    font-family: Inria Serif;
+    font-style: normal;
+    color: white;
+}
+
+.headerBlock{
+    position: relative;
+    display: inline-block;
+    align-content: center;
+    float: left;
+    height: 50%;
+    width: 2025px;
+}
+.headerBlock2 {
+    position: absolute;
+    width: 243px;
+    height: 57px;
+    left: 1750px;
+    top: 11px;
+
+    font-family: 'Inria Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: right;
+    color: #FFFCFC;
+    text-decoration-color: black;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}

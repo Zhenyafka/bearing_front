@@ -1,4 +1,4 @@
-import './TableBearing.css';
+import './Components.css';
 import {useState, useEffect, Component} from 'react';
 import xlsxParser from 'xlsx-parse-json';
 import '../../Documents/FKL.xlsx';
