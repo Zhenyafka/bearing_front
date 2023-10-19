@@ -19,7 +19,7 @@ export function App () {
                 <Catalogs/>
             </div>
             <div>
-                <Searchbar/>
+                <Searchbar placeholder="Enter a bearing number" data={TableBearing}/>
             </div>
             <div>
                 <AboutUs/>
